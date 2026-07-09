@@ -1,20 +1,37 @@
 export default function Navbar() {
   return (
-    <header className="fixed inset-x-0 top-0 z-50">
-      <div className="mx-auto flex h-20 max-w-6xl items-center justify-between px-6">
+    <header className="fixed top-0 z-50 w-full border-b border-zinc-200/70 bg-white/80 backdrop-blur">
+      <div className="mx-auto flex h-16 max-w-6xl items-center justify-between px-6">
+
         <a
           href="/"
-          className="text-sm font-semibold uppercase tracking-[0.2em] text-zinc-900"
+          className="text-lg font-black tracking-[0.25em] text-zinc-900"
         >
           SIAVASH
         </a>
 
+        <nav className="hidden items-center gap-8 text-sm font-medium text-zinc-600 md:flex">
+          <a href="#projects" className="transition hover:text-black">
+            Projects
+          </a>
+
+          <a href="#about" className="transition hover:text-black">
+            About
+          </a>
+
+          <a href="#contact" className="transition hover:text-black">
+            Contact
+          </a>
+        </nav>
+
         <a
-          href="#"
-          className="text-sm font-medium text-zinc-600 transition hover:text-black"
+          href="/resume.pdf"
+          download
+          className="rounded-full border border-zinc-300 px-5 py-2 text-sm font-medium transition hover:bg-black hover:text-white"
         >
-          Resume →
+          Resume
         </a>
+
       </div>
     </header>
   );
