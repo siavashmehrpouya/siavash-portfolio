@@ -1,4 +1,5 @@
 import Navbar from "@/components/Navbar";
+import Projects from "@/components/Projects";
 import Footer from "@/components/Footer";
 
 export default function ProjectsPage() {
@@ -6,14 +7,8 @@ export default function ProjectsPage() {
     <>
       <Navbar />
 
-      <main className="mx-auto max-w-5xl px-6 py-32">
-        <h1 className="text-5xl font-bold tracking-tight">
-          Selected Work
-        </h1>
-
-        <p className="mt-10 max-w-3xl text-lg leading-8 text-zinc-600">
-          Project case studies coming soon.
-        </p>
+      <main className="min-h-screen bg-zinc-50 text-zinc-900 pt-24">
+        <Projects />
       </main>
 
       <Footer />

@@ -1,7 +1,5 @@
 import Navbar from "@/components/Navbar";
 import Hero from "@/components/Hero";
-import Projects from "@/components/Projects";
-import About from "@/components/About";
 import Footer from "@/components/Footer";
 
 export default function Home() {
@@ -10,14 +8,6 @@ export default function Home() {
       <Navbar />
 
       <Hero />
-
-      <section className="py-24 md:py-32">
-        <Projects />
-      </section>
-
-      <section className="py-24 md:py-32">
-        <About />
-      </section>
 
       <Footer />
     </main>
