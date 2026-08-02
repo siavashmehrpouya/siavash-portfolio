@@ -233,7 +233,7 @@ export default function Hero() {
             >
               <div className="relative aspect-[4/5] overflow-hidden rounded-[2rem]">
                 <Image
-                  src="/images/profile.jpg"
+                  src="/images/profile-v2.jpg"
                   alt="Siavash Mehrpouya"
                   fill
                   priority
